@@ -1,0 +1,20 @@
+{% extends 'todos/base.html' %}
+
+{% block header %}
+<h3>Edit Item</h3>
+{% endblock %}
+
+{% block content %}
+{% if todos %}
+<form class="form-inline my-2 my-lg-0" method="POST">
+    {% csrf_token %}
+    <input class="form-control mr-sm-2" type="search" placeholder="{{ todos.item }}" value="{{ todos.item }}"
+        aria-label="Search" name="item">
+    <input type="hidden" value="{{ todos.completed }}" name="completed">
+    <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">SUBMIT CHANGES</button>
+
+</form>
+<br>
+<a href="{% url 'index' %}" class="btn btn-dark" role="button">BACK</a>
+{% endif %}
+{% endblock %}

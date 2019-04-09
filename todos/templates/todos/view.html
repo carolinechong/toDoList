@@ -1,0 +1,32 @@
+{% extends 'todos/base.html' %}
+
+{% block header %}
+<h1>To Do Details</h1>
+{% endblock %}
+
+{% block content %}
+<table class="table">
+    <tr>
+        <th class="short-th" scope="col">Item</th>
+        <td>{{ todo.item }}</td>
+    </tr>
+    <tr>
+        <th class="short-th" scope="col">Status</th>
+        {% if todo.completed %}
+        <td>Completed</td>
+        {% else %}
+        <td>Pending</td>
+        {% endif %}
+    </tr>
+    <tr>
+        <th class="short-th" scope="col">Created Date</th>
+        <td>{{ todo.created_at }}</td>
+    </tr>
+    <tr>
+        <th class="short-th" scope="col">Updated Date</th>
+        <td>{{ todo.updated_at }}</td>
+    </tr>
+</table>
+
+<a href="/" class="btn btn-dark" role="button">BACK</a>
+{% endblock %}

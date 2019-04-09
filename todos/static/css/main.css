@@ -1,0 +1,46 @@
+h5 {
+  display: inline-block;
+}
+
+label {
+  margin-top: 20px;
+}
+
+.btn.btn-secondary {
+  background-color: #007bff;
+  border-color: #007bff;
+  margin-right: 2px;
+}
+
+.btn.btn-dark.btn-sm:hover {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn.btn-outline-secondary {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+  margin-right: 5px;
+}
+
+.btn.btn-outline-secondary:hover {
+  background-color: #5a6268;
+  border-color: #5a6268;
+}
+
+.striker {
+  text-decoration: line-through;
+}
+
+.fas.fa-level-down-alt {
+  padding: 20px 0 0 10px;
+}
+
+.fas.fa-minus-circle,
+.fas.fa-eye,
+.fas.fa-check-circle,
+.fas.fa-edit,
+.far.fa-circle {
+  padding-right: 5px;
+}
